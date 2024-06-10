@@ -2,4 +2,4 @@
 Exploring use cases for improving organization internal efficiency using A.I
 
 
-![BOZO-AI drawio](https://github.com/beranidigital/architect/assets/77704356/e226b396-f04e-4e87-8344-760c22c28477)
+![BOZO-AI](https://github.com/beranidigital/architect/assets/77704356/98915698-1b9f-4c94-9b98-b12163619aff)

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-10T12:38:30.723Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="1qbFJT1a7J8hDuZJYABG" version="24.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-10T12:39:37.697Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="U-egfXivldNH3FkJz4aM" version="24.5.2" type="github">
   <diagram name="Page-1" id="pUJUgK8hR9QI15zZ7cge">
     <mxGraphModel dx="2492" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="210" y="420" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-2" value="Discord" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
-          <mxGeometry x="435" y="420" width="60" height="80" as="geometry" />
+          <mxGeometry x="390" y="420" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-3" value="GitHub" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="300" y="420" width="60" height="80" as="geometry" />
@@ -65,7 +65,7 @@
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-14" target="1pQ-WaWnxOZxjhe7-Tj_-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-14" value="Summarizer&lt;div&gt;Agent&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-14" value="Summarizer Agent" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="280" y="660" width="100" height="110" as="geometry" />
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-14" target="1pQ-WaWnxOZxjhe7-Tj_-21" edge="1">
@@ -75,16 +75,20 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-21" value="Scrapper" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="100" y="580" width="80" height="80" as="geometry" />
+          <mxGeometry x="100" y="550" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-14" target="1pQ-WaWnxOZxjhe7-Tj_-23" edge="1">
+        <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-14" target="1pQ-WaWnxOZxjhe7-Tj_-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="370" y="690" as="sourcePoint" />
             <mxPoint x="470" y="550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="720" />
+              <mxPoint x="420" y="720" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-23" value="Discord&lt;div&gt;Bot&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="425" y="580" width="80" height="80" as="geometry" />
+          <mxGeometry x="380" y="550" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-14" target="1pQ-WaWnxOZxjhe7-Tj_-25" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -109,7 +113,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-27" value="API" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="200" y="590" width="80" height="80" as="geometry" />
+          <mxGeometry x="200" y="550" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="zpP05A4RWX_OMCWbU6EZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-29" target="1pQ-WaWnxOZxjhe7-Tj_-8">
           <mxGeometry relative="1" as="geometry" />

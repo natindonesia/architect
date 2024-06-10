@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-10T13:24:19.569Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="-M7NGLV1fPkS16RmpXA9" version="24.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-10T13:24:27.671Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="VF1ygOET7-3l9xwQzk5o" version="24.5.2" type="github">
   <diagram name="Page-1" id="pUJUgK8hR9QI15zZ7cge">
-    <mxGraphModel dx="719" dy="378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1753" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -271,7 +271,7 @@
           <mxGeometry x="1760" y="500" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="zpP05A4RWX_OMCWbU6EZ-52" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;HR Talent Assist&lt;/h1&gt;&lt;p&gt;Using deduction and aggregated knowledge to determine if a candidate is good fit&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1945" y="530" width="235" height="120" as="geometry" />
+          <mxGeometry x="1900" y="500" width="235" height="120" as="geometry" />
         </mxCell>
         <mxCell id="zpP05A4RWX_OMCWbU6EZ-53" value="Social Media" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="2002.5" y="830" width="120" height="60" as="geometry" />

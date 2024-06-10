@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-10T12:42:26.943Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="aJg5C0XnvyGJIOaHwZrx" version="24.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-10T12:45:12.197Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="DtVHmxV7AMCJVPtmB3Ow" version="24.5.2" type="github">
   <diagram name="Page-1" id="pUJUgK8hR9QI15zZ7cge">
-    <mxGraphModel dx="1642" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1402" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -32,6 +32,9 @@
           <mxGeometry x="1070" y="1030" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="zpP05A4RWX_OMCWbU6EZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-12" target="1pQ-WaWnxOZxjhe7-Tj_-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-12" target="zpP05A4RWX_OMCWbU6EZ-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-12" value="Vector Search" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
@@ -141,6 +144,29 @@
         </mxCell>
         <mxCell id="1pQ-WaWnxOZxjhe7-Tj_-29" value="Assistant&lt;div&gt;(Search Engine)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="840" y="850" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-8" value="Long Term Memory" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="662.5" y="410" width="87.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;startArrow=classic;startFill=1;" edge="1" parent="1" source="zpP05A4RWX_OMCWbU6EZ-9" target="zpP05A4RWX_OMCWbU6EZ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zpP05A4RWX_OMCWbU6EZ-9" target="zpP05A4RWX_OMCWbU6EZ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-9" value="Auto GPT" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="930" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="1pQ-WaWnxOZxjhe7-Tj_-13" target="zpP05A4RWX_OMCWbU6EZ-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-14" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Strategic Advisor&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zpP05A4RWX_OMCWbU6EZ-16" value="Discord" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="290" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

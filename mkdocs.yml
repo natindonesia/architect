@@ -1,3 +1,5 @@
 site_name: Berani Docs
 theme:
   name: material
+plugins:
+  - tags

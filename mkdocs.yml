@@ -1,6 +1,9 @@
 site_name: Berani Docs
+site_url: https://beranidigital.github.io/architect
+
 theme:
   name: material
 plugins:
   - tags
   - search
+  - social

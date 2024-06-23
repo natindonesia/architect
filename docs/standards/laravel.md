@@ -120,7 +120,37 @@ class User extends Model
 
 ## Example of Do's and Don'ts
 
-- **Let Laravel Guess Table Names**
+### Use Blade Directives Over PHP Tags
+
+✅
+
+```blade
+@if (count($users) > 0)
+    <ul>
+        @foreach ($users as $user)
+            <li>{{ $user->name }}</li>
+        @endforeach
+    </ul>
+@else
+    <p>No users found.</p>
+@endif
+```
+
+❌
+
+```php
+<?php if (count($users) > 0): ?>
+    <ul>
+        <?php foreach ($users as $user): ?>
+            <li><?= $user->name ?></li>
+        <?php endforeach; ?>
+    </ul>
+<?php else: ?>
+    <p>No users found.</p>
+<?php endif; ?>
+```
+
+### Let Laravel Guess Table Names
 
 ✅
 
@@ -143,7 +173,7 @@ class User extends Model
 Setting the table name explicitly can lead to inconsistencies in naming conventions across the application.
 
 
-- **Use Eloquent Relationships Over Queries**
+### Use Eloquent Relationships Over Queries
 
 ✅
 
@@ -171,7 +201,7 @@ class Post extends Model
 
 Using Eloquent relationships simplifies the code, makes it more readable, and takes advantage of Laravel's ORM features.
 
-- **Validation in Form Request Over Controllers**
+### Validation in Form Request Over Controllers
 
 ✅
 
@@ -204,7 +234,7 @@ public function store(Request $request)
 
 Defining validation rules in a form request class keeps controllers clean and focuses them on their primary responsibility of handling HTTP requests.
 
-- **Use Config and Language Files Over Hard-Coded Text**
+### Use Config and Language Files Over Hard-Coded Text
 
 ✅
 
@@ -229,6 +259,66 @@ return redirect()->back()->with('message', 'Post has been successfully saved!');
     Post has been successfully saved!
 </div>
 ```
+
+### Use Route Names Over URIs
+
+✅
+
+```php
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+```
+
+```blade
+<a href="{{ route('posts.index') }}">View All Posts</a>
+```
+
+❌
+
+```php
+Route::get('/posts', [PostController::class, 'index']);
+```
+
+```blade
+<a href="/posts">View All Posts</a>
+```
+
+Using route names makes it easier to update URIs in the future without changing the links in multiple places.
+
+### Avoid Complex Logic in Blade Templates
+
+✅
+
+```php
+// Controller
+public function show(Post $post)
+{
+    $comments = $post->comments()->active()->get();
+    foreach ($comments as $comment) {
+        $comment->formattedDate = $comment->created_at->format('Y-m-d');
+    }
+    return view('posts.show', compact('post', 'comments'));
+}
+
+// Blade Template
+@foreach ($comments as $comment)
+    <p>{{ $comment->body }}</p>
+    <small>{{ $comment->formattedDate }}</small>
+@endforeach
+
+```
+
+❌
+
+```blade
+@foreach ($post->comments()->active()->get() as $comment)
+    <p>{{ $comment->body }}</p>
+    <small>{{ $comment->created_at->format('Y-m-d') }}</small>
+@endforeach
+```
+
+Complex logic in Blade templates makes them harder to maintain, test and finding it. Keep logic in controllers.
+
+## Conclusion
 
 
 

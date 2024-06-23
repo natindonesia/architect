@@ -1,3 +1,6 @@
+---
+tags: [identity-management, user-profile, database-schema, personal-information, data-verification]
+---
 # 🪪 Identities
 
 ## User Identity Entity

@@ -1,3 +1,9 @@
+---
+tags:
+  - AI
+  - Microsoft Azure
+  - OpenAI
+---
 # Bozo AI
 Exploring use cases for improving organization efficiency using A.I
 

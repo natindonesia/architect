@@ -1,6 +1,5 @@
-site_name: Berani Docs
-site_url: https://beranidigital.github.io/architect
-
+site_name: NAT Docs
+site_url: https://natindonesia.github.io/architect
 theme:
   name: material
   features:
@@ -8,4 +7,4 @@ theme:
 plugins:
   - tags
   - search
-  - social
+  - social 

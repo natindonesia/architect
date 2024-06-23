@@ -1,6 +1,10 @@
 site_name: NAT Docs
+site_url: https://natindonesia.github.io/architect
 theme:
   name: material
+  features:
+    - navigation.instant
 plugins:
   - tags
   - search
+  - social 

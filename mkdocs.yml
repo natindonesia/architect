@@ -3,6 +3,8 @@ site_url: https://beranidigital.github.io/architect
 
 theme:
   name: material
+  features:
+    - navigation.instant
 plugins:
   - tags
   - search

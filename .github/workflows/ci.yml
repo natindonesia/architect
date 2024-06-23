@@ -45,6 +45,7 @@ jobs:
           path: |
             ~/.cache/pip
             !~/.cache/pip/log
+            ~/.local/bin
           key: ${{ runner.os }}-pip-${{ env.cache_id }}
           restore-keys: |
             ${{ runner.os }}-pip-

@@ -1,4 +1,4 @@
-# Laravel Code Standards and Style Guide
+# 📚 Laravel Code Standards and Style Guide
 
 This guide provides the coding standards and style guidelines for developing applications using Laravel. Adhering to these standards ensures code consistency, readability, and maintainability across projects.
 

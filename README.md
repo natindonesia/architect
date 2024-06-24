@@ -30,11 +30,14 @@ At Berani Digital ID, we believe that knowledge should be shared, nurtured, and 
 
 Also see the contributon guideline [CONTRIBUTING.md](CONTRIBUTING.md)
 
-# How to Run 
+## How to Run 
 1. `pip install mkdocs`
 2. `pip install mkdocs-material`
 3. `pip install "mkdocs-material[imaging]"`
 4. `mkdocs serve`
+
+## More Information
+https://squidfunk.github.io/mkdocs-material/reference/
 
 # Library
 

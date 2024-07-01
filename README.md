@@ -39,11 +39,6 @@ Also see the contributon guideline [CONTRIBUTING.md](CONTRIBUTING.md)
 ## More Information
 https://squidfunk.github.io/mkdocs-material/reference/
 
-# Library
-
-## Naming Convention
-
-Our library naming scheme follow the following convention `library-framework-title`
 
 # Related Repositories
 

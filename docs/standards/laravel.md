@@ -318,6 +318,39 @@ public function show(Post $post)
 
 Complex logic in Blade templates makes them harder to maintain, test and finding it. Keep logic in controllers.
 
+
+### Prefer Enums or Constants Over Magic Strings
+
+✅
+
+```php
+class Post extends Model
+{
+    public const STATUS_PUBLISHED = 'published';
+    public const STATUS_DRAFT = 'draft';
+}
+```
+
+```php
+enum PostStatus: string {
+    case PUBLISHED = 'published';
+    case DRAFT = 'draft';
+}
+
+...
+
+$post->status = PostStatus::PUBLISHED;
+
+```
+
+❌
+
+```php
+$post->status = 'published';
+```
+
+Using enums or constants makes the code more readable and prevents typos and inconsistencies in string values.
+
 ## Conclusion
 
 

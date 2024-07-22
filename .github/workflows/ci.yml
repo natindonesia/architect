@@ -39,9 +39,25 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
-      - run: pip install "mkdocs-material[imaging]"
-      - run: mkdocs build
+      - uses: actions/cache@v4
+        id: cache-py
+        with:
+          path: |
+            .venv
+          key: ${{ runner.os }}-venv
+          restore-keys: |
+            ${{ runner.os }}-venv-
+      - name: venv
+        if: steps.cache-py.outputs.cache-hit != 'true'
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install mkdocs-material
+          pip install mkdocs-material[imaging]
+      - name: Build
+        run: |
+          source .venv/bin/activate
+          mkdocs build
       - run: mv site _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

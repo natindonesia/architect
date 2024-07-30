@@ -351,6 +351,65 @@ $post->status = 'published';
 
 Using enums or constants makes the code more readable and prevents typos and inconsistencies in string values.
 
+### Avoid Enums in Migration Files
+
+✅
+
+```php
+class CreatePostsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('posts', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('body')->nullable();
+            $table->text('status'); // Use string instead of enum
+            $table->timestamps();
+        });
+    }
+}
+```
+
+❌
+
+```php
+class CreatePostsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('posts', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('body')->nullable();
+            $table->enum('status', ['published', 'draft']); // Avoid using enum in migrations
+            $table->timestamps();
+        });
+    }
+}
+```
+
+It's awful to use enums in migrations because it makes it harder to change the enum values in the future.
+
+### Prefer Nullable Columns If Possible
+
+✅
+
+```php
+$table->string('blood_type')->nullable();
+```
+
+❌
+
+```php
+$table->string('blood_type');
+```
+
+Due to ever changing requirements, it's better to use nullable columns 
+and enforce the constraints in the application layer.
+
+
+
 ## Conclusion
 
 

@@ -2,7 +2,7 @@
 tags: [git, coding-standards, style-guide, version-control]
 ---
 
-# Git Best Practices
+# 🚀 Git Best Practices
 
 This document outlines industry-standard best practices for using Git, a distributed version control system widely used for software development. Following these guidelines will help ensure your codebase remains clean, maintainable, and collaborative.
 

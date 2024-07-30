@@ -239,7 +239,7 @@ Defining validation rules in a form request class keeps controllers clean and fo
 ✅
 
 ```php
-return redirect()->back()->with('message', __('messages.post_saved'));
+return redirect()->back()->with('message', __('Post has been successfully saved!'));
 ```
 
 ```php

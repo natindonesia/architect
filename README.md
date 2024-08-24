@@ -34,9 +34,3 @@ Also see the contributon guideline [CONTRIBUTING.md](CONTRIBUTING.md)
 # Related Repositories
 
 - https://github.com/natindonesia/laravel-template-project
-
-# About
-
-Ready to contribute? Together, let's connect, innovate & thrive! 🌈👩‍💻👨‍💻
-
-

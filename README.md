@@ -33,7 +33,7 @@ Also see the contributon guideline [CONTRIBUTING.md](CONTRIBUTING.md)
 
 # Related Repositories
 
-- [Berani Base Architect Laravel](https://github.com/beranidigital/berani-base-architect) - Used to demonstrate and develop library, can be used for template
+- https://github.com/natindonesia/laravel-template-project
 
 # About
 

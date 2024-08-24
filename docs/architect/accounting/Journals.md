@@ -77,4 +77,4 @@ Used `Accounts` :
 
 
 ---
-Powered by Berani Digital ID © 2024
+Powered by NAT Indonesia © 2024

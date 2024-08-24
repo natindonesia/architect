@@ -40,4 +40,4 @@ NOTE
 - Required: Ensures that the values entered a property of a database table can NOT be NULL.
 
 ---
-Powered by Berani Digital ID © 2024
+Powered by NAT Indonesia © 2024

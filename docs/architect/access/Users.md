@@ -54,13 +54,13 @@ Here is a sample of a user's data which is retrieved from a sign-in to Facebook:
       "details": {
         "id": "106077000000000",
         "name": "John Joe",
-        "email": "johnjoe@berani.id",
+        "email": "johnjoe@natindonesia.id",
         "avatar": "https://example.com/avatar.png"
       }
     }
   },
   "lastSignInAt": 1655799453171,
-  "applicationId": "berani_app"
+  "applicationId": "natindonesia_app"
 }
 ```
 
@@ -191,4 +191,4 @@ Sample identities from a user who signed in with both Facebook and WeChat:
 ```
 
 ---
-Powered by Berani Digital ID © 2024
+Powered by NAT Indonesia © 2024

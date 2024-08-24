@@ -69,4 +69,4 @@ We create default role `System` to allow all user access permissions, known as `
 
 
 ---
-Powered by Berani Digital ID © 2024
+Powered by NAT Indonesia © 2024

@@ -45,4 +45,4 @@ The `fin_currency` table serves as a central repository for the currency informa
 
 
 ---
-Powered by Berani Digital ID © 2024
+Powered by NAT Indonesia © 2024

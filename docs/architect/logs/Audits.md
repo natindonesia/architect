@@ -34,4 +34,4 @@ Administrators can perform a detailed analysis of logs associated with specific 
 To access user-specific logs, follow these steps: Navigate to User Management, select the desired user, and click on User Logs. The resulting table will exclusively display log events performed and triggered by that particular user.
 
 ---
-Powered by Berani Digital ID © 2024
+Powered by NAT Indonesia © 2024

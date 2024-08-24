@@ -76,4 +76,4 @@ By clearly defining the wallet account type, users can better understand the pur
 
 
 ---
-Powered by Berani Digital ID © 2024
+Powered by NAT Indonesia © 2024

@@ -172,7 +172,6 @@ class User extends Model
 
 Setting the table name explicitly can lead to inconsistencies in naming conventions across the application.
 
-
 ### Use Eloquent Relationships Over Queries
 
 ✅
@@ -185,6 +184,10 @@ class Post extends Model
         return $this->hasMany(Comment::class);
     }
 }
+```
+
+```php
+$comments = $post->comments;
 ```
 
 ❌
@@ -200,6 +203,85 @@ class Post extends Model
 ```
 
 Using Eloquent relationships simplifies the code, makes it more readable, and takes advantage of Laravel's ORM features.
+
+### Migration Files
+
+- Use meaningful names for migration files.
+- Use the `up` and `down` methods for schema changes.
+- Avoid using raw SQL queries in migrations.
+- Use artisan commands to generate migrations `php artisan make:migration --table=users create_users_table`.
+- Name format for migration files: `YYYY_MM_DD_HHMMSS_operation_name_table`
+
+- ✅ `2022_01_01_000000_create_users_table.php`
+- ✅ `2022_01_01_000000_update_users_table.php`
+- ❌ `2022_01_01_000000_users.php`
+- ❌ `RAHHHHHHHHHHHH.php`
+
+✅
+
+```php
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('payments', function (Blueprint $table) {
+            $table->id();
+            $table->foreignIdFor(\App\Models\Guest::class)->nullable()->constrained()->nullOnDelete();
+            $table->json('payment_details');
+            $table->string('payment_method');
+            $table->string('status');
+            $table->decimal('total_amount', 16, 2);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('payments');
+    }
+};
+
+```
+
+❌
+
+```php
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('payments', function (Blueprint $table) {
+            $table->id();
+            $table->integer('guest_id')->unsigned()->nullable();
+            $table->foreign('guest_id')->references('id')->on('guests')->onDelete('set null');
+            $table->text('payment_details');
+            $table->string('payment_method');
+            $table->string('status');
+            $table->decimal('total_amount', 16, 2);
+            $table->timestamps();
+        });
+
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        DB::statement('DROP TABLE payments');
+    }
+};
+```
 
 ### Validation in Form Request Over Controllers
 
@@ -318,7 +400,6 @@ public function show(Post $post)
 
 Complex logic in Blade templates makes them harder to maintain, test and finding it. Keep logic in controllers.
 
-
 ### Prefer Enums or Constants Over Magic Strings
 
 ✅
@@ -405,13 +486,9 @@ $table->string('blood_type')->nullable();
 $table->string('blood_type');
 ```
 
-Due to ever changing requirements, it's better to use nullable columns 
+Due to ever changing requirements, it's better to use nullable columns
 and enforce the constraints in the application layer.
 
-
-
 ## Conclusion
-
-
 
 By following these guidelines, you can maintain a high standard of code quality and consistency in your Laravel applications.

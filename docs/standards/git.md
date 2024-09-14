@@ -84,6 +84,7 @@ Example:
 
 - Write commit messages in the imperative mood (e.g., "Add feature" not "Added feature").
 - This style aligns with automated tools that use commit messages to generate changelogs.
+- Footer reference issues or pull request if any, example `natindonesia/repo/issues/38` the footer should be `Closes #38`
 
 ### Atomic Commits
 

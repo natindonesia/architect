@@ -1,27 +1,13 @@
 
-# Intern Onboarding Guide
+# Onboarding Technical Guide
 
 Welcome to the team! This guide will help you get started with your internship by covering essential topics, tools, and processes. Follow each section carefully, and don't hesitate to ask questions if anything is unclear.
 
----
 
-## Table of Contents
-
-1. [Introduction to the Team](#introduction-to-the-team)
-2. [Workstation Setup](#workstation-setup)
-3. [Development Environment](#development-environment)
-4. [Version Control with Git](#version-control-with-git)
-5. [Project Management Tools](#project-management-tools)
-6. [Code Review Process](#code-review-process)
-7. [Communication Channels](#communication-channels)
-8. [Resources & Documentation](#resources-documentation)
-9. [Best Practices](#best-practices)
 
 ---
 
 ## Introduction to the Team
-
-
 
 ### Team Goals
 - Brief overview of the team's mission and current projects.
@@ -48,6 +34,21 @@ Welcome to the team! This guide will help you get started with your internship b
 ---
 
 ## Development Environment
+
+### Every Laravel Project Ever
+
+
+## Prerequisite
+
+1. Git, Web Server, MySQL, PHP ^8.2, Composer, NodeJS ^20
+
+```bash
+sudo apt install -y apache2 git mariadb-server unzip
+sudo apt -y install php8.4 php8.4-{cli,gd,mysql,pdo,mbstring,tokenizer,bcmath,xml,fpm,curl,zip,intl,bcmath}
+# Install composer
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer 
+```
+
 
 ### Setting Up the Repository
 - Clone the main project repository:

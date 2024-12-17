@@ -6,15 +6,6 @@ tags: [laravel, coding-standards, style-guide, php, eloquent, blade-templates]
 
 This guide provides the coding standards and style guidelines for developing applications using Laravel. Adhering to these standards ensures code consistency, readability, and maintainability across projects.
 
-## Table of Contents
-
-1. [General Guidelines](#general-guidelines)
-2. [Naming Conventions](#naming-conventions)
-3. [Code Formatting](#code-formatting)
-4. [PHP Specific Standards](#php-specific-standards)
-5. [Eloquent ORM](#eloquent-orm)
-6. [Blade Templates](#blade-templates)
-7. [Example of Do's and Don'ts](#example-of-dos-and-donts)
 
 ## General Guidelines
 
